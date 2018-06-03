@@ -1,0 +1,41 @@
+.big_button{
+background: $purple;
+border: none;
+border-bottom: .6rem solid darken($purple,10%);
+color: white;
+font-weight: bold;
+font-size: $l-size;
+margin-bottom: $m-size;
+padding: 2.4rem;
+width: 100%;
+
+
+}
+
+.big_button:disabled{  //making button less visible when it is disabled
+    opacity: .5;
+}
+
+
+.button{
+    background: $purple;
+    border: none;
+    border-bottom: .3rem solid darken($purple,10%);
+    color: white;
+    font-weight: 500;
+    padding: $s-size;
+}
+
+.button--link{ //this represent the modified version of previous version and to apply we give class name as button button--link;
+    background: none;
+    border: none;
+    color: $off-white;
+    padding: 0;
+}
+
+@media(min-width: 45rem){
+    .big_button {
+      margin-bottom: $xl-size;
+    }
+   
+}
